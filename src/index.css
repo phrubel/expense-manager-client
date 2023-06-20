@@ -5,7 +5,9 @@
 .content {
   min-height: 80vh;
 }
-
+body {
+  background: linear-gradient(90deg, #c7c5f4, #776bcc);
+}
 * {
   box-sizing: border-box;
   margin: 0;
