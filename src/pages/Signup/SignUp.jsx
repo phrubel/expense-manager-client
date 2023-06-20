@@ -1,14 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
 import Layout from '../../components/Layout';
-import './Login.css';
 import { BiUserCircle } from 'react-icons/bi';
 import { TbBrandSamsungpass } from 'react-icons/tb';
 import { ImSpinner9 } from 'react-icons/im';
 import { BsFacebook, BsGoogle, BsTwitter } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-// https://codepen.io/Mohuth/pen/QWgrPvp
 
-const Login = () => {
+const SignUp = () => {
   return (
     <Layout>
       <div className="flex justify-center items-center min-h-[80vh] mt-10">
@@ -38,9 +38,9 @@ const Login = () => {
             </form>
 
             <p className="font-semibold flex justify-center items-center text-black ">
-              Don't have an account?{' '}
-              <Link to="/sign-up" className="text-red-700 cursor-pointer">
-                Register
+              Already have account?{' '}
+              <Link to="/login" className="text-red-700 cursor-pointer">
+                Login
               </Link>
             </p>
 
@@ -75,10 +75,10 @@ const Login = () => {
             <span className="rotate-45 absolute shape1 h-[520px] w-[520px] bg-white top-[-50px] right-[120px] " />
           </div>
         </div>
-      </div>
+      </div>{' '}
       <div className="mt-[250px] md:mt-[150px]"></div>
     </Layout>
   );
 };
 
-export default Login;
+export default SignUp;
