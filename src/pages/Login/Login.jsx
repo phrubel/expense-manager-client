@@ -9,10 +9,10 @@ import { BsFacebook, BsGoogle, BsTwitter } from 'react-icons/bs';
 const Login = () => {
   return (
     <Layout>
-      <div className="flex justify-center items-center min-h-[80vh]">
-        <div className="screen relative h-[600px] w-[350px]  mt-10 mb-10">
+      <div className="flex justify-center items-center min-h-[80vh] mt-10">
+        <div className="screen relative h-[700px] md;h-[600px] w-full md:w-[350px]  mt-10 mb-10">
           <div className="screen__content relative h-[100%]">
-            <form className=" w-[320px] p-7 pt-[156px]">
+            <form className="w-full md:w-[320px] p-7 pt-[156px] -mt-8">
               <div className="py-5 px-0 relative">
                 <BiUserCircle className=" absolute top-8 text-slate-400" />
                 <input
@@ -35,37 +35,38 @@ const Login = () => {
               </button>
             </form>
             <div className=" absolute h-[140px] w-[160px] text-center bottom-0 right-0 text-white">
-              <h3>log in via</h3>
+              <h3 className="mt-14">log in via</h3>
               <div className="flex items-center justify-center">
                 <a
                   href="#"
-                  className="py-5 px-3 text-white no-underline fab fa-instagram"
+                  className="py-5 px-3 hover:scale-150 text-white no-underline fab fa-instagram"
                 >
                   <BsGoogle size={22} />
                 </a>
                 <a
                   href="#"
-                  className="py-5 px-3 text-white no-underline fab fa-instagram"
+                  className="py-5 px-3 hover:scale-150 text-white no-underline fab fa-instagram"
                 >
                   <BsFacebook size={22} />
                 </a>
                 <a
                   href="#"
-                  className="py-5 px-3 text-white no-underline fab fa-instagram"
+                  className="py-5 px-3 hover:scale-150 text-white no-underline fab fa-instagram"
                 >
                   <BsTwitter size={22} />
                 </a>
               </div>
             </div>
           </div>
-          <div className="screen__background">
-            <span className="screen__background__shape screen__background__shape4" />
-            <span className="screen__background__shape screen__background__shape3" />
-            <span className="screen__background__shape screen__background__shape2" />
-            <span className="screen__background__shape screen__background__shape1" />
+          <div className="screen__background absolute top-0 right-0 left-0 bottom-0 z-0">
+            <span className="rotate-45 absolute h-[400px] w-[200px] bg-[#7e7bb9] top-[420px] right-[50px] rounded-[60px] " />
+            <span className="rotate-45 absolute shape3 h-[540px] w-[190px] -top-6 right-0 rounded-[32px]   " />
+            <span className="rotate-45 absolute h-[220px] w-[220px] bg-[#6c63ac] top-[-172px] right-0 rounded-[32px]" />
+            <span className="rotate-45 absolute shape1 h-[520px] w-[520px] bg-white top-[-50px] right-[120px] " />
           </div>
         </div>
       </div>
+      <div className="mt-[250px] md:mt-[150px]"></div>
     </Layout>
   );
 };
